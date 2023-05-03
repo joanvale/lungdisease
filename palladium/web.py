@@ -56,11 +56,11 @@ def upload_xray_image():
 			report="Prediction:", "Congratulations your lungs are in normal condition"
 			severity="Severity:", "None"
 			symptoms=""
-		elif report.lower()=="tubercolosis":
-			report="Prediction:", "Looks like you are having Tubercolosis."
-			symptoms="Symptoms:", "Some of the symptoms of tubercolosis are fever, tiredness, chills, weight loss, night sweats"
+		elif report.lower()=="tuberculosis":
+			report="Prediction:", "Looks like you are having Tuberculosis."
+			symptoms="Symptoms:", "Some of the symptoms of tuberculosis are fever, tiredness, chills, weight loss, night sweats"
 		elif report.lower()=="pneumonia":
-			report="Prediction:", "Looks like you are infected by Pneumonia", "Severity:", "Moderate"
+			report="Prediction:", "Looks like you are infected by Pneumonia", "Severity:", "Severe"
 			symptoms="Symptoms:", "Some of the symptoms of pneumonia are cough, which may produce greenish, yellow or even bloody mucus, fever, shortness of breath rapid, shallow breathing, sharp or stabbing chest pain that gets worse when you breathe deeply or cough."           
 	except:
 		report="Unable to process image"
