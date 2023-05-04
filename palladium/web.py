@@ -56,7 +56,7 @@ def upload_xray_image():
 			report="Prediction:", "Congratulations your lungs are in normal condition"
 			severity="Severity:", "None"
 			symptoms=""
-		elif report.lower()=="Tuberculosis":
+		elif report.lower()=="tuberculosis":
 			report="Prediction:", "Looks like you are having Tuberculosis."
 			symptoms="Symptoms:", "Some of the symptoms of tuberculosis are fever, tiredness, chills, weight loss, night sweats"
 		elif report.lower()=="pneumonia":
