@@ -26,8 +26,8 @@ transformer=transforms.Compose([
 #Dataloader
 
 #Path for training and testing directory
-train_path='./data/train'
-test_path='./data/test'
+train_path='/content/drive/MyDrive/archive (8)/Data/train'
+test_path='/content/drive/MyDrive/archive (8)/Data/test'
 print("Loading data")
 train_loader=DataLoader(
     torchvision.datasets.ImageFolder(train_path,transform=transformer),
