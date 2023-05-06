@@ -53,14 +53,13 @@ def upload_xray_image():
 	try:
 		report=xray_cnn.prediction(f"./static/uploads/{filename}")
 		if report.lower() =="normal":
-			report="Prediction:", "Congratulations your lungs are in normal condition"
-			severity="Severity:", "None"
+			report="Prediction:", "Congratulations your lungs are in NORMAL condition"
 			symptoms=""
 		elif report.lower()=="tuberculosis":
-			report="Prediction:", "Looks like you are having Tuberculosis."
+			report="Prediction:", "Looks like you are having TUBERCULOSIS."
 			symptoms="Symptoms:", "Some of the symptoms of tuberculosis are fever, tiredness, chills, weight loss, night sweats"
 		elif report.lower()=="pneumonia":
-			report="Prediction:", "Looks like you are infected by Pneumonia", "Severity:", "Severe"
+			report="Prediction:", "Looks like you are infected by PNEUMONIA"
 			symptoms="Symptoms:", "Some of the symptoms of pneumonia are cough, which may produce greenish, yellow or even bloody mucus, fever, shortness of breath rapid, shallow breathing, sharp or stabbing chest pain that gets worse when you breathe deeply or cough."           
 	except:
 		report="Unable to process image"
