@@ -64,7 +64,7 @@ def upload_xray_image():
 		elif report.lower()=="moderate pneumonia":
 			report="Prediction:", "Looks like you are infected by PNEUMONIA", "Severity:", "MODERATE PNEUMONIA"
 			symptoms="Symptoms:", "Some of the symptoms of pneumonia are cough, which may produce greenish, yellow or even bloody mucus, fever, shortness of breath rapid, shallow breathing, sharp or stabbing chest pain that gets worse when you breathe deeply or cough."
-	        elif report.lower()=="severe pneumonia":
+		elif report.lower()=="severe pneumonia":
 			report="Prediction:", "Looks like you are infected by PNEUMONIA", "Severity:", "SEVERE PNEUMONIA"
 			symptoms="Symptoms:", "Some of the symptoms of pneumonia are cough, which may produce greenish, yellow or even bloody mucus, fever, shortness of breath rapid, shallow breathing, sharp or stabbing chest pain that gets worse when you breathe deeply or cough."
 	except:
