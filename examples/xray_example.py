@@ -9,7 +9,7 @@ import glob
 
 
 #categories
-classes=['NORMAL', 'PNEUMONIA', 'TUBERCULOSIS']
+classes=['MILD PNEUMONIA', 'MODERATE PNEUMONIA', 'NORMAL', 'SEVERE PNEUMONIA', 'TUBERCULOSIS']
 
 #CNN Network
 def pil_loader(path):
@@ -84,7 +84,7 @@ class ConvNet(nn.Module):
         return output
 
 
-checkpoint=torch.load('xray_lung_disease_detection_model.pth')
+checkpoint=torch.load('xray_lung_disease_detection_model (1).pth')
 model=ConvNet(num_classes=len(classes))
 model.load_state_dict(checkpoint)
 model.eval()
