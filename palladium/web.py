@@ -39,9 +39,9 @@ def upload__ctscan_image():
 		elif report.lower()=="pneumonia":
 			report="Prediction:", "Looks like you are infected by PNEUMONIA" 
 			symptoms="Symptoms:", "Some of the symptoms of pneumonia are cough, which may produce  greenish, yellow or even bloody mucus, fever, shortness of breath rapid, shallow breathing, sharp or stabbing chest pain that gets worse when you breathe deeply or cough."
-		elif report.lower()=="tubercolosis":
-			report="Looks like you are having Tubercolosis. You should go and see a doctor"
-			symptoms="Some of the symptoms of tubercolosis are fever, tiredness, chills, weight loss, night sweats"
+		elif report.lower()=="covid-19":
+			report="Prediction:", "Looks like you are having COVID-19."
+			symptoms="Symptoms:", "Fever or chills, cough, Shortness of breath or difficulty breathing, Muscle or body aches, New loss of taste or smell, Headache, and sore throat."
 	except:
 		report="Unable to process image"
 		symptoms=""
