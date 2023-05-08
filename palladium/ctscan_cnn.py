@@ -9,7 +9,7 @@ import glob
 
 
 #categories
-classes=['TUBERCOLOSIS', 'NORMAL']
+classes=['COVID-19', 'NORMAL', 'PNEUMONIA']
 
 #CNN Network
 def pil_loader(path):
